@@ -12,6 +12,10 @@ import { ProductOverviewComponent } from './components/product-overview/product-
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { ProductAnalyticsComponent } from './components/product-analytics/product-analytics.component';
 import { WarehouseListComponent } from './components/warehouse-list/warehouse-list.component';
+import { OrderProductsComponent } from './components/order-products/order-products.component';
+import { PendingOrdersComponent } from './components/pending-orders/pending-orders.component';
+import { PendingOrderDetailsComponent } from './components/pending-order-details/pending-order-details.component';
+import { UserComponent } from './components/user/user.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { WarehouseListComponent } from './components/warehouse-list/warehouse-li
     ProductOverviewComponent,
     ProductDetailsComponent,
     ProductAnalyticsComponent,
-    WarehouseListComponent
+    WarehouseListComponent,
+    OrderProductsComponent,
+    PendingOrdersComponent,
+    PendingOrderDetailsComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

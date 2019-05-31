@@ -1,0 +1,163 @@
+<div class="row">
+  <div class="col-md-12 p-0 bg-info" style="">
+    <div class="card">
+      <div class="card-header d-flex justify-content-center align-items-center"> Order products</div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-center justify-content-end border-right">
+            <h5 class="">Pick business partner:</h5>
+          </div>
+          <div class="col-md-6 d-flex"><select class="w-50 rounded">
+              <option value="" selected="" disabled="">Select business partner</option>
+              <option data-tokens="ketchup mustard" value="Hot Dog, Fries and a Soda">Company x</option>
+              <option data-tokens="mustard" value="Burger, Shake and a Smile">Company y</option>
+              <option data-tokens="frosting" value="Company x">Company x</option>
+            </select></div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-center justify-content-end border-right">
+            <h5 class="">Pick local warehouse:</h5>
+          </div>
+          <div class="col-md-6 d-flex"><select class="w-50 rounded">
+              <option value="" selected="" disabled="">Select local warehouse</option>
+              <option data-tokens="ketchup mustard" value="Hot Dog, Fries and a Soda">Warehouse 1</option>
+              <option data-tokens="mustard" value="Burger, Shake and a Smile">Warehouse 2</option>
+              <option data-tokens="frosting" value="Company x">Warehouse 3</option>
+            </select></div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header"> Pick products to order:</div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12 d-flex justify-content-center align-items-center">
+                    <form class="form-inline">
+                    </form>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <input type="text" class="form-control w-75" id="inlineFormInputGroup" placeholder="Search products">
+                      <div class="input-group-append"><button class="btn btn-dark" type="button"><i class="fa fa-search"></i></button></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 d-flex justify-content-center">
+                    <select class="rounded w-100">
+                      <option value="" selected="" disabled="">Filter products by group</option>
+                      <option data-tokens="ketchup mustard" value="Hot Dog, Fries and a Soda">Company x</option>
+                      <option data-tokens="mustard" value="Burger, Shake and a Smile">Company y</option>
+                      <option data-tokens="frosting" value="Company x">Company x</option>
+                    </select>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-12">
+                    <table class="table">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col" class="text-center">Article name</th>
+                          <th scope="col" class="text-center">Availible quantity</th>
+                          <th scope="col" class="text-center">Unit price</th>
+                          <th scope="col" class="text-center">Quantity</th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td class="text-center">Some product 1</td>
+                          <td class="text-center">12121</td>
+                          <td class="text-center">0.80$</td>
+                          <td class="d-flex justify-content-center align-items-center"><input type="text" class="form-control w-75" id="inlineFormInputGroup" placeholder="Enter quantity"></td>
+                          <td><a class="btn btn-info" href="#">Add</a></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td class="text-center">Some product 2</td>
+                          <td class="text-center">122</td>
+                          <td class="text-center">0.80$</td>
+                          <td class="d-flex align-items-center justify-content-center"><input type="text" class="form-control w-75" id="inlineFormInputGroup" placeholder="Enter quantity"></td>
+                          <td><a class="btn btn-info" href="#">Add</a></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td class="text-center">Some product 3</td>
+                          <td class="text-center">33</td>
+                          <td class="text-center">0.80$</td>
+                          <td class="d-flex justify-content-center align-items-center"><input type="text" class="form-control w-75" id="inlineFormInputGroup" placeholder="Enter quantity"></td>
+                          <td><a class="btn btn-info" href="#">Add</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header"> Picked products:</div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-3 d-flex justify-content-center align-items-center"><a class="btn btn-dark" href="#"><i class="fa fa-pencil-square-o"></i>&nbsp;Modify</a></div>
+                  <div class="col-md-3 d-flex justify-content-center align-items-center"><a class="btn btn-dark" href="#"><i class="fa fa-trash-o"></i>&nbsp;Delete</a></div>
+                  <div class="col-md-3"></div>
+                  <div class="col-md-3"></div>
+                </div>
+                <br>
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col" class="text-center">Article name</th>
+                      <th scope="col" class="text-center">Quantity</th>
+                      <th scope="col" class="text-center">Unit price</th>
+                      <th scope="col" class="text-center" contenteditable="true">Total</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td class="text-center">Some product 1</td>
+                      <td class="text-center">12121</td>
+                      <td class="text-center">0.80$</td>
+                      <td class="text-center">1000.12$</td>
+                      <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td class="text-center">Some product 2</td>
+                      <td class="text-center">122</td>
+                      <td class="text-center">0.80$</td>
+                      <td class="text-center">1000.12$</td>
+                      <td><input type="checkbox"></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td class="text-center">Some product 3</td>
+                      <td class="text-center">33</td>
+                      <td class="text-center">0.80$</td>
+                      <td class="text-center">1000.12$</td>
+                      <td><input type="checkbox"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-end align-items-center border-top p-1"><a class="btn btn-success" href="#">Place order</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
